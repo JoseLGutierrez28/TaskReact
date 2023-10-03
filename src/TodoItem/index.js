@@ -1,4 +1,4 @@
-import './Css/TodoItem.css';
+import './TodoItem.css';
 import { FaCheck, FaXmark } from "react-icons/fa6";
 
 function TodoItem(props) {
