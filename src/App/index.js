@@ -1,9 +1,5 @@
 import React from 'react';
-import { TodoCounter } from '../TodoCounter';
-import { TodoSearch } from '../TodoSearch';
-import { TodoList } from '../TodoList';
-import { TodoItem } from '../TodoItem';
-import { CreateTodoButton } from '../CreateTodoButton';
+import { AppUI } from './AppUi';
 import { useLocalStorage } from './useLocalStorage';
 
 
@@ -19,7 +15,7 @@ import { useLocalStorage } from './useLocalStorage';
 // localStorage.removeItem('TODOS_V1')
 
 function App() {
-  const [todos, saveTodos] = useLocalStorage('TODOS_V1', []);
+  const { item: todos, saveItem: saveTodos, loading, error } = useLocalStorage('TODOS_V1', []);
   const [searchValue, setSearchValue] = React.useState('');
 
   const completedTodos = todos.filter(todo => !!todo.completed).length;
@@ -52,36 +48,19 @@ function App() {
   }
 
   return (
-    <>
-      {/* React.Fragment */}
+    <AppUI
+      loading={loading}
+      error={error}
+      completedTodos={completedTodos}
+      totalTodos={totalTodos}
+      searchValue={searchValue}
+      setSearchValue={setSearchValue}
+      searchedTodo={searchedTodo}
+      completeTodo={completeTodo}
+      deleteTodo={deleteTodo}
 
-      <TodoCounter
-        completed={completedTodos}
-        total={totalTodos}
-      />
-
-      <TodoSearch
-        searchValue={searchValue}
-        setSearchValue={setSearchValue}
-      />
-
-      <TodoList>
-        {searchedTodo.map(todo => (
-          <TodoItem
-            key={todo.text}
-            text={todo.text}
-            completed={todo.completed}
-            onComplete={() => completeTodo(todo.text)}
-            onDelete={() => deleteTodo(todo.text)}
-          />
-        ))}
-      </TodoList>
-
-      <CreateTodoButton />
-
-    </>
-    // React.Fragment
-  );
+    />
+  )
 }
 
 
