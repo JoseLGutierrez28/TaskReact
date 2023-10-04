@@ -45,7 +45,6 @@ export {
     useLocalStorage
 }
 
-
 // const defaultTodos = [
 //   { text: "Cortar cebolla", completed: true },
 //   { text: "Tomar el curso de React", completed: false },

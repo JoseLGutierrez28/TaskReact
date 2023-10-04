@@ -12,15 +12,11 @@ function TodoCounter() {
   return (
     <div>
       <h1 className="tittle">
-        Has completado
-        <span>
-          {completedTodos}
-        </span>
+        Has completado 
+        <span> {completedTodos} </span>
         de
-        <span>
-          {totalTodos}
-        </span>
-        Todos
+        <span> {totalTodos} </span>
+        Task
       </h1>
     </div>
   );
