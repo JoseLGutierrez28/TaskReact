@@ -4,10 +4,15 @@ import './EmptyTodos.css';
 function EmptyTodos() {
 
   return (
-    <p className='textEmptyTodo'>Crea tu primer Task..!</p>
+    <div className='firstContainer'>
+      <div className='loader'></div>
+      <p className='textEmptyTodo'>Crea tu primer Task..!</p>
+    </div>
+
+    
   );
 }
 
 export {
-    EmptyTodos
+  EmptyTodos
 }
