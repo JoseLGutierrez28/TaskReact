@@ -66,8 +66,6 @@ function TodoProvider({ children }) {
             {children}
         </TodoContext.Provider>
 
-        // <TodoContext.Consumer></TodoContext.Consumer>
-
     );
 }
 
