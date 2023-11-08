@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/TaskReact/static/css/main.1d186650.css",
-    "main.js": "/TaskReact/static/js/main.629be56e.js",
+    "main.css": "/TaskReact/static/css/main.65653640.css",
+    "main.js": "/TaskReact/static/js/main.18d9e39e.js",
     "index.html": "/TaskReact/index.html",
-    "main.1d186650.css.map": "/TaskReact/static/css/main.1d186650.css.map",
-    "main.629be56e.js.map": "/TaskReact/static/js/main.629be56e.js.map"
+    "main.65653640.css.map": "/TaskReact/static/css/main.65653640.css.map",
+    "main.18d9e39e.js.map": "/TaskReact/static/js/main.18d9e39e.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d186650.css",
-    "static/js/main.629be56e.js"
+    "static/css/main.65653640.css",
+    "static/js/main.18d9e39e.js"
   ]
 }
