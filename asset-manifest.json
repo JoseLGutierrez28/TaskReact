@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/TaskReact/static/css/main.65653640.css",
-    "main.js": "/TaskReact/static/js/main.18d9e39e.js",
+    "main.js": "/TaskReact/static/js/main.a99a861f.js",
     "index.html": "/TaskReact/index.html",
     "main.65653640.css.map": "/TaskReact/static/css/main.65653640.css.map",
-    "main.18d9e39e.js.map": "/TaskReact/static/js/main.18d9e39e.js.map"
+    "main.a99a861f.js.map": "/TaskReact/static/js/main.a99a861f.js.map"
   },
   "entrypoints": [
     "static/css/main.65653640.css",
-    "static/js/main.18d9e39e.js"
+    "static/js/main.a99a861f.js"
   ]
 }
